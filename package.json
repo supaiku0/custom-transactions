@@ -1,0 +1,35 @@
+{
+    "name": "@supaiku0/custom-transactions",
+    "description": "Custom transaction examples for Ark Core",
+    "version": "2.2.1",
+    "contributors": [
+        ""
+    ],
+    "license": "MIT",
+    "main": "dist/index.js",
+    "files": [
+        "dist"
+    ],
+    "scripts": {
+        "prepublishOnly": "yarn build",
+        "compile": "../../node_modules/typescript/bin/tsc",
+        "build": "yarn clean && yarn compile",
+        "build:watch": "yarn clean && yarn compile -w",
+        "clean": "del dist"
+    },
+    "dependencies": {
+        "@arkecosystem/core-container": "^2.2.1",
+        "@arkecosystem/core-transactions": "^2.2.1",
+        "@arkecosystem/core-utils": "^2.2.1",
+        "@arkecosystem/crypto": "^2.2.1",
+        "bs58check": "^2.1.2",
+        "bytebuffer": "^5.0.1"
+    },
+    "devDependencies": {},
+    "publishConfig": {
+        "access": "public"
+    },
+    "engines": {
+        "node": ">=10.x"
+    }
+}
