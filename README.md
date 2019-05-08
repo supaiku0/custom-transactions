@@ -1,9 +1,9 @@
-# Ark Core - Custom Transactions Plugin
+# Core - Custom Transaction Type Example Plugin
 
 ## Documentation
-This plugin demonstrates how to create and register custom transactions within Ark Core.
+This plugin demonstrates how to create and register a custom business registration transaction within Core.
 
-Remember to set a fee in the `milestones.json` and to the `addonBytes` of the `core-transaction-pool` for the `dummy` transaction type.
+Remember to set a fee in the `milestones.json` and to the `addonBytes` of the `core-transaction-pool` for the `businessRegistration` transaction type.
 
 ## Security
 
