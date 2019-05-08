@@ -1,18 +1,18 @@
 import { Container, Logger } from "@arkecosystem/core-interfaces";
-import { TransactionHandlerRegistry } from "@arkecosystem/core-transactions";
+import { Handlers } from "@arkecosystem/core-transactions";
 import { defaults } from "./defaults";
-import { DummyTransactionHandler } from "./handlers";
+import { BusinessRegistrationTransactionHandler } from "./handlers";
 
-export const plugin: Container.PluginDescriptor = {
+export const plugin: Container.IPluginDescriptor = {
     pkg: require("../package.json"),
     defaults,
     alias: "custom-transactions",
     async register(container: Container.IContainer, options) {
         container.resolvePlugin<Logger.ILogger>("logger").info("Registering custom transactions");
-        TransactionHandlerRegistry.registerCustomTransactionHandler(DummyTransactionHandler);
+        Handlers.Registry.registerCustomTransactionHandler(BusinessRegistrationTransactionHandler);
     },
     async deregister(container: Container.IContainer, options) {
         container.resolvePlugin<Logger.ILogger>("logger").info("Deregistering custom transactions");
-        TransactionHandlerRegistry.deregisterCustomTransactionHandler(DummyTransactionHandler);
+        Handlers.Registry.deregisterCustomTransactionHandler(BusinessRegistrationTransactionHandler);
     },
 };

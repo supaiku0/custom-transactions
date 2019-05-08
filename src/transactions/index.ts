@@ -1,1 +1,1 @@
-export * from "./dummy"
+export * from "./business-registration"
