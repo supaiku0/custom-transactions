@@ -18,10 +18,10 @@
         "clean": "rm -rf dist/"
     },
     "dependencies": {
-        "@arkecosystem/core-container": "^2.4.0-next.3",
-        "@arkecosystem/core-transactions": "^2.4.0-next.3",
-        "@arkecosystem/core-utils": "^2.4.0-next.3",
-        "@arkecosystem/crypto": "^2.4.0-next.3",
+        "@arkecosystem/core-container": "^2.4.0-next.10",
+        "@arkecosystem/core-transactions": "^2.4.0-next.10",
+        "@arkecosystem/core-utils": "^2.4.0-next.10",
+        "@arkecosystem/crypto": "^2.4.0-next.10",
         "bytebuffer": "^5.0.1"
     },
     "devDependencies": {
